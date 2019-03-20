@@ -1,0 +1,95 @@
+/* Page-Wide */
+body {
+  background-color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+/* Colored iPod Windows */
+.square {
+  width: 50%;
+  height: 50%;
+}
+#pink {
+  background-color: #FF377B;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#green {
+  background-color: #7DE522;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#yellow {
+  background-color: #FBE608;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#blue {
+  background-color: #3AB1FC;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* Sticker */
+img#sticker {
+  height: 100px;
+  position: absolute;
+  top: -20px;
+  right: -50px;
+
+  /* For Fun! To Rotate */
+     -ms-transform: rotate(25deg); /* IE 9 */
+ -webkit-transform: rotate(25deg); /* Safari 3-8 */
+         transform: rotate(25deg);
+}
+
+
+/* Silhouettes */
+.square>img {
+  height: inherit;
+}
+img~.double {
+  right: 30px;
+  opacity: 0.2;
+}
+img~.triple {
+  right: 50px;
+  opacity: 0.1;
+}
+.align-left {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.align-right {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+
+/* Text */
+.text-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 400px;
+  position: absolute;
+
+  /* For Fun! To Center Vertically and Horizontally */
+  top: 50%;
+  left: 50%;
+     -ms-transform: translate(-50%, -50%); /* IE 9 */
+ -webkit-transform: translate(-50%, -50%); /* Safari 3-8 */
+         transform: translate(-50%, -50%);
+}
+h1+p {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
