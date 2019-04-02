@@ -1,0 +1,11 @@
+/* From the Google Fonts Library */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i');
+
+
+/* Self-Hosted From my Fonts Folder */
+@font-face {
+  font-family: 'Meddon';
+  src: url('../fonts/Meddon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
