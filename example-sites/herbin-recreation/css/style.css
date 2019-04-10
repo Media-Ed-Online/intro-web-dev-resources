@@ -16,19 +16,19 @@ body {
 }
 #canvas::after {
   content: '';
-  width: 500px; /* width of canvas + 25px for left and right borders */
-  height: 600px; /* height of canvas + 25px for top and bottom borders */
+  width: 500px;
+  height: 600px;
   background-image: url("../images/canvas-overlay.png");
   opacity: 0.5;
 
   position: absolute;
-  top: 0; /* allowing for the outside border of 25px wide */
+  top: 0;
   right: ;
-  left: 0; /* allowing for the outside border of 25px wide */
+  left: 0;
   bottom: ;
 }
 
-/* Let's divide this canvas into 3 columns */
+/* 3 Vertical Columns */
 .column-left {
   width: 30%;
   height: 100%;
@@ -51,7 +51,7 @@ body {
   position: relative;
 }
 
-/* Let's give that central column 3 rows */
+/* Horizontal Rows */
 .row {
   width: 100%;
   height: 33.3%;
@@ -113,9 +113,9 @@ img.top {
   width: 90%;
   height: 90%;
   border-radius: 90%;
+  background-color: #E1DEDB;
   display: inline-block;
   margin: 5%;
-  background-color: #E1DEDB;
 }
 .circle.red {
   background-color: #A3262A;
@@ -123,15 +123,15 @@ img.top {
 .circle.blue {
   height: 80%;
   background-color: #4244B4;
-  display: inline-block;
   margin-top: 10%;
+
   position: relative;
   z-index: 0;
 }
   .circle.blue>.half-circle {
     width: 100%;
     height: 50%;
-    border-radius: 0;
+    border-radius: 0; /* reset borders */
     border-bottom-right-radius: 125px;
     border-bottom-left-radius: 125px;
     background-color: #270187;
