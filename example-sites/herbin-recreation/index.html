@@ -11,31 +11,43 @@
 
   <body>
     <!-- Canvas, or Drawing Area -->
-    <div id="canvas">
-      <div class="left-side">
-        <div class="blue-halfcircle-left"></div>
-        <img src="./images/red-triangle.png" alt="red triangle shape" />
+    <div id="canvas"><div class="horizontal-rectangle"></div>
+      <div class="column-left">
+        <img src="./images/red-triangle.png" class="bottom" alt="red triangle shape" />
+        <div class="vertical-rectangle"></div>
+        <div class="half-circle"></div>
       </div>
 
-      <div class="center">
-        <div class="white-circle"></div>
-        <div class="blue-circle"></div>
-        <div class="red-circle"></div>
+      <div class="column-center">
+        <div class="row">
+          <div class="circle"></div>
+        </div>
+
+        <div class="row">
+          <div class="circle blue">
+            <div class="half-circle"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="circle red"></div>
+        </div>
       </div>
 
-      <div class="right-side">
-        <img src="./images/blue-triangle.png" alt="blue triangle shape" />
-        <div class="blue-halfcircle-right"></div>
+      <div class="column-right">
+        <img src="./images/blue-triangle.png" class="top" alt="blue triangle shape" />
+        <div class="vertical-rectangle"></div>
+        <div class="half-circle"></div>
       </div>
 
-      <div class="line-small"></div>
-      <div class="line-large"></div>
+
     </div>
 
     <!-- Text -->
     <div id="text-container">
       <h1>“Nude”</h1>
       <p>Auguste Herbin, 1960</p>
+      <p><a href="https://www.tate.org.uk/art/art-terms/a/abstraction-creation" target="_blank">Tate Museum</a></p>
     </div>
   </body>
 </html>

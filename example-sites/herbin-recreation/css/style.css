@@ -1,5 +1,6 @@
-/* Page-Wide */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Fascinate+Inline');
+
+/* Page-Wide */
 body {
   background: white;
   padding: 20px;
@@ -10,132 +11,168 @@ body {
   width: 500px;
   height: 600px;
   background-color: black;
-  border: 25px solid black;
+  border: 15px solid #E1DEDB;
   position: relative;
 }
-/* For fun! Add an overlay for texture... */
 #canvas::after {
   content: '';
-  width: 550px; /* width of canvas + 25px for left and right borders */
-  height: 650px; /* height of canvas + 25px for top and bottom borders */
+  width: 500px; /* width of canvas + 25px for left and right borders */
+  height: 600px; /* height of canvas + 25px for top and bottom borders */
   background-image: url("../images/canvas-overlay.png");
+  opacity: 0.5;
+
   position: absolute;
-  top: -25px; /* allowing for the outside border of 25px wide */
-  left: -25px; /* allowing for the outside border of 25px wide */
-  opacity: 0.6;
-}
-
-/* Columns */
-.left-side {
-  width: 32%;
-  height: 100%;
-  display: inline-block;
-  padding: relative;
-  /*background: pink;*/
-}
-.center {
-  width: 34%;
-  height: 100%;
-  display: inline-block;
-  position: relative;
-  /*background: purple;*/
-}
-.right-side {
-  width: 32%;
-  height: 100%;
-  display: inline-block;
-  position: relative;
-  /*background: orange;*/
-}
-
-
-/* Graphics */
-img {
-  width: 150px;
-  height: 300px;
-  position: absolute;
-}
-
-/* Circles */
-.blue-halfcircle-left {
-  width: 150px;
-  height: 300px;
-  border-top-right-radius: 150px;
-  border-bottom-right-radius: 150px;
-  background-color: #4142B8;
-}
-.blue-halfcircle-right {
-  width: 150px;
-  height: 300px;
-  border-top-left-radius: 150px;
-  border-bottom-left-radius: 150px;
-  background-color: #270187;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-  /*.half-right.rotated {
-    width: 87.5px;
-    height: 175px;
-    margin: 0px;
-    position: relative;
-    /* For Fun! To rotate an element: */
-      /* -ms-transform: rotate(270deg); /* IE 9 */
-   /*-webkit-transform: rotate(270deg); /* Safari 3-8 */
-           /*transform: rotate(270deg);
-  }*/
-.white-circle {
-  width: 175px;
-  height: 175px;
-  border-radius: 200px;
-  background-color: #E6DDD4;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; /* allowing for the outside border of 25px wide */
+  right: ;
+  left: 0; /* allowing for the outside border of 25px wide */
   bottom: ;
-  margin: auto;
 }
-.blue-circle {
-  width: 175px;
-  height: 175px;
-  border-radius: 175px;
-  background-color: #4142B8;
-  margin: 40px auto;
+
+/* Let's divide this canvas into 3 columns */
+.column-left {
+  width: 30%;
+  height: 100%;
+  float: left;
+
+  position: relative;
 }
-.red-circle {
-  width: 175px;
-  height: 175px;
-  border-radius: 175px;
-  background-color: #A4272B;
+.column-center {
+  width: 40%;
+  height: 100%;
+  float: left;
+
+  position: relative;
+}
+.column-right {
+  width: 30%;
+  height: 100%;
+  float: left;
+
+  position: relative;
+}
+
+/* Let's give that central column 3 rows */
+.row {
+  width: 100%;
+  height: 33.3%;
+}
+
+/* Images */
+img {
+  width: 125px;
+  height: 250px;
+}
+img.bottom {
   position: absolute;
   top: ;
-  left: 0;
+  right: ;
+  left: 10px;
+  bottom: 25px;
+}
+img.top {
+  position: absolute;
+  top: 25px;
   right: 0;
-  bottom: 0;
-  margin: auto;
+  left: ;
+  bottom: ;
 }
 
+/* Half-Circles */
+.half-circle {
+  width: 125px;
+  height: 250px;
+  border-top-right-radius: 125px;
+  border-bottom-right-radius: 125px;
+}
+  .column-left .half-circle {
+    background-color: #4244B4;
 
-/* Lines */
-.line-small {
-  width: 10px;
+    position: absolute;
+    top: 25px;
+    right: ;
+    left: 10px;
+    bottom: ;
+  }
+  .column-right .half-circle {
+      background-color: #270187;
+
+      position: absolute;
+      top: ;
+      right: 25px;
+      bottom: 25px;
+      left: ;
+
+      /* For Fun! To rotate an element: */
+        -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+            transform: rotate(180deg);
+  }
+
+/* Full Circles */
+.circle {
+  width: 90%;
+  height: 90%;
+  border-radius: 90%;
+  display: inline-block;
+  margin: 5%;
+  background-color: #E1DEDB;
+}
+.circle.red {
+  background-color: #A3262A;
+}
+.circle.blue {
+  height: 80%;
+  background-color: #4244B4;
+  display: inline-block;
+  margin-top: 10%;
+  position: relative;
+  z-index: 0;
+}
+  .circle.blue>.half-circle {
+    width: 100%;
+    height: 50%;
+    border-radius: 0;
+    border-bottom-right-radius: 125px;
+    border-bottom-left-radius: 125px;
+    background-color: #270187;
+
+    position: absolute;
+    top: ;
+    right: ;
+    left: ;
+    bottom: 0;
+  }
+
+/* Line Shapes */
+.vertical-rectangle {
+  width: 12px;
   height: 200px;
-  background-color: #E6DDD4;
-  position: absolute;
-  top: 300px;
+  background-color: #E1DEDB;
 }
-.line-large {
-  width: 300px;
-  height: 50px;
-  background-color: #E6DDD4;
+  .column-left .vertical-rectangle {
+    margin-top: 10em;
+    float: right;
+  }
+  .column-right .vertical-rectangle {
+    margin-top: 25px;
+    float: left;
+  }
+.horizontal-rectangle {
+  width: 350px;
+  height: 30px;
+  background-color: #E1DEDB;
+
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 275px;
+  right: ;
+  left: 90px;
+  bottom: ;
+  z-index: 1;
 }
 
 /* Text */
 #text-container {
-  width: 400px;
+  width: 600px;
 }
 h1 {
   font-family: 'Fascinate Inline', cursive;
@@ -143,6 +180,9 @@ h1 {
 }
 p {
   font-family: 'Comfortaa', cursive;
-  font-size: 125%;
   margin-top: 5px;
+}
+p:first-of-type {
+  font-size: 125%;
+  text-transform: uppercase;
 }
