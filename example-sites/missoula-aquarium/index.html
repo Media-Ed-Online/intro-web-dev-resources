@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Example Site for Fictional Missoula Aquarium">
+    <meta name="author" content="Justine Evans">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Tab Title --><title>The M.Aq</title>
+    <!-- Tab Icon  --><link rel="icon" href="./images/site-icon.png" type="image/png">
+  </head>
+
+  <body>
+    <!-- Site Branding + Navigation -->
+    <div id="site-branding">
+      <!-- Background Video -->
+      <video class="header-video" autoplay loop>
+        <source src="./media/penguins.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="./media/penguins.webm" type='video/webm;codecs="vp8, vorbis"'>
+        <p>A video of penguins swimming in an aquarium.</p>
+        <p>Sorry, your browser does not support the video tag.</p>
+      </video>
+      <audio controls autoplay loop>
+        <source src="./media/tank-ambiance.wav" type="audio/wav">
+      </audio>
+      <!-- Text Info -->
+      <div class="header-text">
+        <img src="./images/site-logo.svg" alt="Missoula Aquarium Logo" title="M.Aq Home" />
+        <h1>The Missoula Aquarium</h1>
+        <p>The M.Aq is focused on Responsibility, Sustainablity, & Conservation</p>
+      </div>
+    </div>
+
+    <nav id="main-menu">
+      <!-- Logo -->
+      <div class="site-name">
+        <img src="./images/site-logo.svg" alt="Missoula Aquarium Logo" title="M.Aq Home" />
+        <h3><a href="index.html#main">M.Aq</a></h3>
+      </div>
+      <!-- Site Links -->
+      <div class="menu-item">
+         <a href="exhibits.html#main">Exhibits</a>
+      </div>
+      <div class="menu-item">
+         <a href="about.html#main">About</a>
+      </div>
+      <div class="menu-item">
+         <a href="contact.html#main">Contact</a>
+      </div>
+      <!-- Dropdown -->
+      <div class="menu-item dropdown">
+         <a href="#main">Missoula Attractions <img src="./images/arrow-down.svg" alt="" width="10px" /></a>
+         <div class="dropdown-menu">
+            <div class="dropdown-item">
+               <a href="http://www.ci.missoula.mt.us/169/Splash-Montana">Splash Montana</a>
+            </div>
+            <div class="dropdown-item">
+               <a href="http://carouselformissoula.com/">Carousel for Missoula</a>
+            </div>
+            <div class="dropdown-item">
+               <a href="http://www.missoulabutterflyhouse.org/">Missoula Insectarium</a>
+            </div>
+         </div>
+      </div>
+    </nav>
+
+    <!-- Main Page Content -->
+    <div id="main">
+      <h2>Wonder at the M.Aq</h2>
+
+      <div class="image-container">
+        <img src="./images/placeholder-1.jpg" width="100%;">
+        <div class="image-caption">
+          <h3>Lorem Ipsum</h3>
+          <p>Gentrify woke irony +1 tote bag lo-fi drinking vinegar.</p>
+        </div>
+      </div>
+
+      <div class="column-lg">
+        <h2>Lorem Ipusm</h2>
+        <div class="row">
+          <h3 class="post-title">1 Title Impsum Amet</h3>
+          <p>Lorem ipsum dolor amet bitters ethical microdosing, narwhal jean shorts venmo umami YOLO 90's trust fund activated charcoal lomo pok pok hammock. Man bun marfa blog narwhal letterpress food truck. Umami forage disrupt, snackwave DIY mlkshk aesthetic kogi bitters vice.</p>
+        </div>
+        <div class="row">
+          <p>2 Vegan williamsburg jianbing, gluten-free tote bag try-hard mixtape yuccie +1 everyday carry shabby chic umami vexillologist pop-up edison bulb. Whatever everyday carry listicle, coloring book hell of microdosing gastropub banh mi yuccie tumblr art party. Aesthetic hammock kitsch microdosing, viral biodiesel tumblr cliche beard readymade seitan. Copper mug chambray street art raclette shaman fam neutra.</p>
+        </div>
+      </div>
+
+      <div class="column-lg">
+        <h2>Lorem Ipusm</h2>
+        <div class="row">
+          <!--<div style="border: 2px solid red; position: absolute;color: red"; padding: 1em;"> * LIVE</div>-->
+
+          <div class="image-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/LvfaMv9nbJc?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="image-caption">
+              <p>Gentrify woke irony +1 tote bag lo-fi drinking.</p>
+              <span style="padding: 2px 7px; background: tomato; color: white;">	&bull; Live</span>
+            </div>
+          </div>
+
+          <p>Gentrify woke irony +1 tote bag lo-fi drinking vinegar. Bushwick YOLO retro pinterest cloud bread skateboard. Small batch retro twee scenester roof party humblebrag celiac 8-bit direct trade franzen flannel cray. Kogi knausgaard godard selfies umami deep v, woke whatever 8-bit prism cred. Intelligentsia heirloom keytar, hot chicken synth tote bag vaporware williamsburg pok pok kickstarter 3 wolf moon selvage hoodie trust fund cronut. Occupy bicycle rights drinking vinegar small batch, vaporware taxidermy flannel live-edge marfa.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer + Social Menu -->
+    <footer>
+      <nav id="social-menu">
+        <a href="https://twitter.com/">
+          <img src="./images/social-logo-twitter.png" alt="twitter logo" title="Connect on Twitter" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="./images/social-logo-instagram.png" alt="instagram logo" title="Connect on Instagram" />
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="./images/social-logo-facebook.png" alt="facebook logo" title="Connect on Facebook" />
+        </a>
+        <a href="https://www.youtube.com/">
+          <img src="./images/social-logo-youtube.png" alt="youtube logo" title="Connect on YouTube" />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

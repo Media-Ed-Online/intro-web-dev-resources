@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto+Slab');
+
+/* WHOLE PAGE STYLE */
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #E2E2E2;
+  margin: 0;
+}
+/*body:after {
+    content: '';
+    display: block;
+    clear: both;
+}*/
+h1, h2, h3 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+/* HEADER AREA: Branding ----- */
+#site-branding {
+  width: 100vw;   /* Width of browser window when site 1st loads */
+  height: 100vh;  /* Height of browser window when site 1st loads */
+  max-width: 100%;/* Fixes scrollbar issues */
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+/* Text Container */
+.header-text {
+  width: 90%;
+  margin: auto 5%;
+  text-align: center;
+  color: #FFFFFF;
+
+  /* For Fun! To Center Vertically */
+  position: absolute;
+  top: 50%;
+     -ms-transform: translateY(-50%); /* IE 9 */
+ -webkit-transform: translateY(-50%); /* Safari 3-8 */
+         transform: translateY(-50%);
+}
+.header-text>img {
+  width: 100px;
+  height: auto;
+  border: 10px double #FFFFFF;
+  border-radius: 100%;
+}
+.header-text>p {
+  font-size: 1.5em;
+}
+
+
+/* HEADER AREA: Main Navigation ----- */
+#main-menu {
+  width: 100%;
+  height: auto;
+  background-color: #222222;
+  border-top: 5px solid #00BBBB;
+  line-height: 2em;
+  text-align: right;
+  text-transform: uppercase;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0px;
+  z-index: 2;
+}
+/* Right-Side Branding */
+.site-name {
+  float: left;
+  margin: auto 1em;
+}
+.site-name img {
+  width: 30px;
+  vertical-align: middle;
+}
+.site-name h3 {
+  font-family: 'Bungee Shade', cursive;
+  letter-spacing: 3px;
+  font-size: 150%;
+  display: inline-block;
+  margin: 0;
+  padding: 0.25em;
+}
+/* Main Links */
+#main-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#main-menu .site-name a:hover {
+  color: #00BBBB;
+}
+/* Menu Items */
+.menu-item {
+  min-width: 6em;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+.menu-item:hover {
+  background-color: #00BBBB;
+}
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+}
+.dropdown-menu {
+  background-color: #222222;
+  margin: 0.5em 0 0 -1em;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-item {
+  display: block;
+  padding: 0.5em;
+  line-height: 40px;
+  border-left: 5px solid #222222;
+  border-right: 5px solid #222222;
+}
+.dropdown-item:hover, .dropdown-item a:hover {
+  color: #00BBBB !important;
+}
+
+
+/* MAIN CONTENT ----- */
+#main {
+  padding: 2em 4em;
+}
+.column-lg {
+  width: 46%;
+  padding: 1em;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+
+
+/* IMAGES ----- */
+.image-container {
+  position: relative;
+  margin: 2em 0;
+}
+.image-caption {
+  width: 40%;
+  color: #FFFFFF;
+  background-color: rgba(34,34,34,.6);
+  border-top: 5px solid #00BBBB;
+  padding: 2em;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+.image-caption h3 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 2em;
+  margin: 0;
+}
+
+
+/* FORMS ----- */
+/* Address */
+.address {
+  max-width: 400px;
+  text-align: right;
+  padding: 0 2em;
+  border-right: 2px solid #00BBBB;
+  display: inline-block;
+  vertical-align: text-top;
+}
+.address p:first-of-type {
+  font-size: 150%;
+}
+/* Contact Form */
+form {
+  width: 400px;
+  margin: auto;
+  padding-left: 2em;
+  display: inline-block;
+  vertical-align: text-top;
+}
+form p {
+  margin-bottom: 5px;
+}
+form span {
+  color: #999999;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+  color: #333333;
+  border: none;
+}
+#email-sub {
+  width: auto !important;
+  vertical-align: text-top;
+}
+button {
+  width: auto;
+  background-color: #FFFFFF;
+  line-height: 30px;
+  padding: .25em 1em;
+  margin-top: 1em;
+  border: 1px solid #00BBBB;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+button:hover {
+  color: #FFFFFF;
+  background-color: #00BBBB;
+}
+
+
+/* FOOTER ----- */
+footer {
+  width: 30px;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 1;
+}
+footer img {
+  width: 30px;
+  margin: .25em;
+}
+footer img:hover {
+  margin-left: .5em;
+}
+
+
+.post-title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 2em;
+}
+.post-title::first-letter {
+  color: #00BBBB;
+  font-size: 200%;
+}
