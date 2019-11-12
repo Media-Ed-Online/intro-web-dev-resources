@@ -1,0 +1,13 @@
+/* ---------------
+|   THE SIDEBAR   |
+ --------------- */
+.fixed-sidebar {
+  background-color: #000;
+  /* Total Width 300px (200px wide + 50px left + 50px right = 300px): */
+    width: 200px;
+    padding: 50px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
