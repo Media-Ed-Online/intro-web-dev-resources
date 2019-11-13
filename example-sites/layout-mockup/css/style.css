@@ -102,8 +102,10 @@ a {
 .column {
   background-color: #FFF;
   width: 30%;
+  min-width: 150px;
   border: 1px solid #000;
   margin-right: 4.5%;
+  margin-bottom: 20px;
   float: left;
 }
 .column:last-of-type {
