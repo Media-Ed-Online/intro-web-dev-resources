@@ -2,17 +2,83 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Example of a Layout Mockup with Fixed Sidebar">
+    <meta name="description" content="Example of Layout with Fixed Sidebar">
     <meta name="author" content="Justine Evans">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed Sidebar Layout Mockup</title>
+    <title>Layout Mockup</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
 
   <body>
-    <!-- Sidebar w/ Site Navigation that remains left: -->
-    <div class="fixed-sidebar">
+    <!-- Create a sidebar w/ Site Navigation that remains left: -->
+    <div class="sidebar">
+      <div class="site-logo">
+        <a href="#"><img src="./images/logo-white-circle.svg" title="Site Title" id="logo" /></a>
+      </div>
+
+      <div id="site-navigation">
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div id="social-links">
+        <a href="#"><img src="./images/facebook.svg" title="Visit Us on Facebook" /></a>
+        <a href="#"><img src="./images/twitter.svg" title="Visit Us on Twitter" /></a>
+        <a href="#"><img src="./images/instagram.svg" title="Visit Us on Instagram" /></a>
+        <a href="#"><img src="./images/vimeo.svg" title="Visit Us on Vimeo" /></a>
+      </div>
     </div>
-    <!-- Main content for posts, images, text, etc.: -->
+
+    <!-- Create an area for posts, images, text, etc.: -->
+    <div class="main-content">
+      <!-- First row for site information: -->
+      <h1 id="site-title">Site Title</h1>
+      <h2 id="site-slogan">Site Slogan</h2>
+
+      <!-- Second row for full-width banner image: -->
+      <div class="banner">
+        <img src="./images/placeholder-large.jpg" title="Large Image" id=""/>
+      </div>
+
+      <!-- Third row for gallery items: -->
+      <div class="gallery">
+        <div class="column">
+          <div class="gallery-item" id="first">
+            <img src="./images/placeholder-thumbnail.jpg" title="Thumbnail" />
+            <h3>Post Title</h3>
+            <a href="./posts/post.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="gallery-item" id="second">
+            <img src="./images/placeholder-thumbnail.jpg" title="Thumbnail" />
+            <h3>Post Title</h3>
+            <a href="./posts/post.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="gallery-item" id="third">
+            <img src="./images/placeholder-thumbnail.jpg" title="Thumbnail" />
+            <h3>Post Title</h3>
+            <a href="./posts/post.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more">
+        <a href="#">View All</a>
+      </div>
+
+      <!-- Fourth row for additional text content: -->
+      <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non pellentesque augue, sit amet porttitor mi. Pellentesque condimentum congue velit a egestas. Praesent at tellus laoreet, pharetra justo in, fermentum lacus.</p>
+
+        <p>&#169; Company, Date</p>
+      </div>
+    </div>
   </body>
 </html>
