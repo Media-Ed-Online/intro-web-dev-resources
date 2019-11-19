@@ -59,6 +59,28 @@ body {
   background-color: #999;
 }
 
+/* Optional: links to social accounts */
+.social-links {
+  background-color: #FFF;
+  width: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 10px
+}
+.social-links img {
+  display: block;
+  background-color: #999;
+
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+.social-links img:hover {
+  background-color: #FFF;
+}
+
 
 
 /* ----------------------
