@@ -3,15 +3,12 @@
  ------------------- */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
 
-
 body {
   margin: 0; /* Removes default browser margins for page */
   font-family: 'Lato', sans-serif;
   font-size: 1.25em;
 }
-a {
-  text-decoration: none;
-}
+
 
 
 /* --------------------
@@ -19,9 +16,77 @@ a {
  -------------------- */
 .navigation {
   background-color: #000;
+  position: fixed; /* Fix the sidebar to the left */
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+}
+.navigation a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* Logo and title */
+.site-info {
+  margin: 2em auto;
+  text-align: center;
+  font-size: 200%;
+}
+.logo {
+  background-color: #FFF;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1em;
+
+  border: 5px solid black;
+  border-radius: 100%;
+
+  line-height: 150px; /* Centers text vertically in div of same height */
+  text-transform: uppercase;
+}
+.logo:hover {
+  border-color: #999;
+}
+/* Site links */
+.site-links {
+  margin: 0 1em;
+}
+.site-links a {
+  display: block; /* Make inline element a block-level (100% width) element */
+  margin: 1em;
+}
+.site-links a:hover, .site-links .active {
+  margin-left: 2.5em;
+}
+
+/* Optional: links to social accounts */
+.social-links {
+  background-color: inherit;
+  width: inherit;
+  position: inherit;
+  bottom: 1em;
+}
+.social-links img {
+  background-color: #999;
+  width: 25%;
+  height: auto;
+  float: left;
+}
+.social-links img:hover {
+  background-color: #FFF;
 }
 
 
 /* ----------------------
 |   MAIN CONTENT STYLE   |
  ---------------------- */
+.main {
+  background-color: #FFF;
+  margin-left: 300px; /* The width of the sidebar */
+  padding: 1em;
+  overflow: auto; /* Default (redundant) */
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
