@@ -14,9 +14,62 @@ body {
 /* --------------------
 |   NAVIGATION STYLE   |
  -------------------- */
+ .navigation {
+   background-color: #000;
+   position: fixed; /* Fix the navbar to the top */
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 60px;
+   overflow: hidden;
+
+   line-height: 60px; /* Centers text vertically in div of same height */
+ }
+ .navigation a {
+   color: #FFF;
+   text-decoration: none;
+ }
+ /* Logo and title */
+ .site-info {
+   display: inline-block;
+   margin: 0 1em;
+
+   color: #FFF;
+ }
+ .logo {
+   background-color: #FFF;
+   display: inline-block;
+   float: left;
+   width: 40px;
+   height: 40px;
+   margin: 10px;
+
+   border-radius: 100%;
+ }
+
+.site-links {
+  float: right;
+}
+
+.site-links a {
+  display: inline-block;
+  padding: 0 1em;
+}
+.site-links a:hover, .site-links .active {
+  background-color: #999;
+}
 
 
 
 /* ----------------------
 |   MAIN CONTENT STYLE   |
  ---------------------- */
+.main {
+  background-color: #FFF;
+  padding: 5em;
+  overflow: auto; /* Default (redundant) */
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
