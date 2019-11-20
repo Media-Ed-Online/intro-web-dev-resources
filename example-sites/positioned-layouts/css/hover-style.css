@@ -14,9 +14,91 @@ body {
 /* --------------------
 |   NAVIGATION STYLE   |
  -------------------- */
+ .navigation {
+   background-color: #000;
+   width: 100%;
+   height: 60px;
+   overflow: hidden;
+
+   position: fixed; /* Fix the navbar to the top */
+   top: 0;
+   left: 0;
+
+   line-height: 60px; /* Centers text vertically in div of same height */
+ }
+ .navigation a {
+   color: #FFF;
+   text-decoration: none;
+ }
+
+ /* Logo and title */
+ .site-info {
+   display: inline-block;
+   margin: 0 1em;
+
+   color: #FFF;
+   font-size: 150%;
+ }
+ .logo {
+   background-color: #FFF;
+   width: 40px;
+   height: 40px;
+
+   display: inline-block;
+   margin: 10px 20px 10px 10px;
+   float: left;
+
+   border-radius: 100%;
+ }
+
+.site-links {
+  float: right;
+}
+
+.site-links a {
+  display: inline-block;
+  padding: 0 1em;
+}
+.site-links a:hover, .site-links .active {
+  background-color: #999;
+}
+
+/* Optional: links to social accounts */
+.social-links {
+  background-color: #FFF;
+  width: 30px;
+
+  position: fixed;
+  bottom: 0;
+  left: 10px
+}
+.social-links img {
+  background-color: #FFF;
+  width: 100%;
+  height: auto;
+
+  display: block;
+  padding: 5px;
+
+  border: 10px dashed #FFF;
+  border-radius: 100%;
+}
+.social-links img:hover {
+  border-color: #999;
+}
 
 
 
 /* ----------------------
 |   MAIN CONTENT STYLE   |
  ---------------------- */
+.main {
+  background-color: #FFF;
+  overflow: auto; /* Default (redundant) */
+
+  padding: 5em;
+}
+.banner {
+  width: 100%;
+  height: auto;
+}

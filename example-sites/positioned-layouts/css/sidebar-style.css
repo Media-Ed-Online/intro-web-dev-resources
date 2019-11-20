@@ -47,6 +47,7 @@ body {
   border-radius: 100%;
 
   line-height: 150px; /* Centers text vertically in div of same height */
+  color: #000;
   text-transform: uppercase;
 }
 .logo:hover {
