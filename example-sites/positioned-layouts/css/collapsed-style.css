@@ -25,12 +25,12 @@ body {
    right: 0;
    overflow: hidden;
 
-   color: #FFF;
    text-align: center;
  }
  /* The icon */
  .hamburger-icon {
    font-size: 2em;
+   color: #FFF;
  }
  .navigation *:not(.hamburger-icon) {
    visibility: hidden; /* Hides everything EXCEPT the icon while collapsed */
