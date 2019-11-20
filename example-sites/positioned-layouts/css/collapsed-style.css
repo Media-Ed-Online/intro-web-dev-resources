@@ -14,9 +14,137 @@ body {
 /* --------------------
 |   NAVIGATION STYLE   |
  -------------------- */
+ /* COLLAPSED */
+ .navigation {
+   background-color: #000;
+   width: 50px; /* Collapsed size */
+   height: 100%;
 
+   position: fixed; /* Fix the collapse to the right */
+   top: 0;
+   right: 0;
+   overflow: hidden;
+
+   color: #FFF;
+   text-align: center;
+ }
+ /* The icon */
+ .hamburger-icon {
+   font-size: 2em;
+ }
+ .navigation *:not(.hamburger-icon) {
+   visibility: hidden; /* Hides everything EXCEPT the icon while collapsed */
+ }
+
+ /* EXPANDED */
+ .navigation:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+   width: 350px;
+ }
+ .navigation:hover * {
+   visibility: visible; /* Shows everything while expanded */
+ }
+ .navigation:hover .hamburger-icon {
+   visibility: hidden;
+ }
+ .navigation a {
+   color: #999;
+   text-decoration: none;
+ }
+
+ /* Logo and title */
+ .site-info {
+   text-align: center;
+   font-size: 200%;
+ }
+ .site-info a {
+   color: #FFF !important;
+ }
+ .logo {
+   background-color: #FFF;
+   width: 150px;
+   height: 150px;
+
+   display: block;
+   margin: 1em auto; /* "auto" centers block content */
+
+   border-radius: 100%;
+
+   line-height: 150px; /* Centers text vertically in div of same height */
+   text-transform: uppercase;
+ }
+
+ /* Site links */
+ .site-links {
+   margin-top: 1em;
+ }
+ .site-links a {
+   background-color: inherit;
+
+   display: block; /* Make inline element a block-level (100% width) element */
+   padding: 1em;
+ }
+ .site-links a:hover, .site-links .active {
+   color: #FFF;
+   background-color: #999;
+ }
+
+ /* Optional: links to social accounts */
+ #social-share {
+   background-color: #000;
+   height: 30px;
+
+   position: relative;
+
+   display: inline-block;
+   margin-bottom: 2em;
+ }
+ .social-select {
+   background-color: inherit;
+   height: inherit;
+
+   display: inline-block;
+   padding: 10px;
+
+   color: #FFF;
+   line-height: 30px;
+   cursor: grab;
+ }
+ .social-links {
+   background-color: inherit;
+   min-width: 7em;
+   height: inherit;
+
+   position: absolute;
+
+   display: none;
+   padding: 10px;
+
+   z-index: 1;
+ }
+ .social-links img {
+   background-color: #999;
+   width: auto;
+   height: 100%;
+ }
+ .social-links img:hover {
+   background-color: #FFF;
+ }
+ #social-share:hover .social-links {
+   display: inline-block;
+ }
 
 
 /* ----------------------
 |   MAIN CONTENT STYLE   |
  ---------------------- */
+ .main {
+   background-color: #FFF;
+   overflow: auto; /* Default (redundant) */
+
+   padding: 50px 100px 50px 50px;
+ }
+ .banner {
+   width: 100%;
+   height: auto;
+ }
