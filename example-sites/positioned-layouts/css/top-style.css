@@ -64,8 +64,6 @@ body {
 .site-links a {
   display: inline-block;
   padding: 0 1em;
-
-  font-size: 0.75em;
 }
 .site-links a:hover, .site-links .active {
   background-color: #999;
