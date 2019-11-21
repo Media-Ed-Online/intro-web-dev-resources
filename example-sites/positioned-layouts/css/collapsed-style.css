@@ -5,6 +5,7 @@
 
 body {
   margin: 0; /* Removes default browser margins for page */
+
   font-family: 'Lato', sans-serif;
   font-size: 1.25em;
 }
@@ -108,7 +109,7 @@ body {
    padding: 10px;
 
    color: #FFF;
-   line-height: 30px;
+   line-height: 30px; /* Centers text vertically in div of same height */
    cursor: grab;
  }
  .social-links {
