@@ -4,7 +4,7 @@
 
 ### Digital Sketch
 
-Here is my original digital sketch for a **[fixed sidebar Website](https://media-ed-online.github.io/intro-web-dev-resources/example-sites/positioned-layouts/sidebar-nav.html)**:
+Here is my original digital sketch for a **[fixed sidebar website](https://media-ed-online.github.io/intro-web-dev-resources/example-sites/positioned-layouts/sidebar-nav.html)**:
 
 ![image of fixed website design sketch](./images/fixed-site-sketch.jpg)
 
