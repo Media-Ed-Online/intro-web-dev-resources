@@ -4,7 +4,7 @@
 
 ### Digital Sketch
 
-Here is my original digital sketch for a **[fixed sidebar Website](https://media-ed-online.github.io/intro-web-dev-resources/example-sites/layout-mockup/sidebar-nav.html)**:
+Here is my original digital sketch for a **[fixed sidebar Website](https://media-ed-online.github.io/intro-web-dev-resources/example-sites/positioned-layouts/sidebar-nav.html)**:
 
 ![image of fixed website design sketch](./images/fixed-site-sketch.jpg)
 
@@ -12,7 +12,7 @@ Here is my original digital sketch for a **[fixed sidebar Website](https://media
 
 ### Paper Sketch
 
-Here is my original paper sketch for a **[collapsed menu Website](https://media-ed-online.github.io/intro-web-dev-resources/example-sites/layout-mockup/collapsed-nav.html)**:
+Here is my original paper sketch for a **[collapsed menu website](https://media-ed-online.github.io/intro-web-dev-resources/example-sites/positioned-layouts/collapsed-nav.html)**:
 
 ![image of my sketch](./images/collapsed-site-sketch.gif)
 
