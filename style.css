@@ -1,0 +1,3 @@
+.section li.snap-activity.modtype_choice, .section li.snap-activity.modtype_feedback, .section li.snap-activity.modtype_quiz, .section li.snap-activity.modtype_survey, .section li.snap-activity.modtype_questionnaire, .section li.snap-activity.modtype_lesson {
+    border-top-color: brown !important;
+}
